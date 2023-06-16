@@ -1,4 +1,4 @@
-# dependency-import-counter [![npm version](https://badge.fury.io/js/dependency-import-counter.png)](https://badge.fury.io/js/dependency-import-counter)
+# dependency-import-counter [![npm version](https://badge.fury.io/js/dependency-import-counter.svg)](https://badge.fury.io/js/dependency-import-counter)
 
 > Helps you understand your project's dependency usage by counting the number of imports.
 

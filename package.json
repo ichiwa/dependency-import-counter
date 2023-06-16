@@ -1,6 +1,6 @@
 {
   "name": "dependency-import-counter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Helps you understand your project's dependency usage by counting the number of imports.",
   "license": "MIT",
   "author": "ichiwa",
