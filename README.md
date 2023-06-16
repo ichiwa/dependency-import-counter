@@ -11,14 +11,15 @@
 
 ## Install
 
+To install dependency-import-counter globally, use the following command:
+
 ```bash
 $ npm install -g dependency-import-counter
 ```
 
 ## Usage
 
-Please pass the directory to be examined.
-The default directory is `.src`.
+You can specify the directory to be analyzed. If no directory is specified, the default directory is ./src.
 
 ```bash
 $ dependency-import-counter ./src
@@ -30,13 +31,13 @@ semver: 7
 react-i18next: 616
 ```
 
-Multiple directories can be passed.
+You can also specify multiple directories:
 
 ```bash
 $ dependency-import-counter ./src1 ./src2 ./src3
 ```
 
-The results will be merged into the output.
+The results will be merged and displayed in the console.
 
 ## Contribute
 
