@@ -1,35 +1,37 @@
 {
-  "name": "ts-npm-package-boilerplate",
-  "version": "0.2.3",
-  "description": "TypeScript NPM Module Boilerplate",
+  "name": "dependency-import-counter",
+  "version": "0.1.1",
+  "description": "Helps you understand your project's dependency usage by counting the number of imports.",
+  "license": "MIT",
+  "author": "ichiwa",
+  "homepage": "https://github.com/ichiwa/dependency-import-counter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:ichiwa/dependency-import-counter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ichiwa/dependency-import-counter/issues"
+  },
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "bin": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
-    "test": "jest --config jest.config.js",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hebertcisco/ts-npm-package-boilerplate.git"
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "react": "latest"
   },
-  "keywords": [
-    "boilerplate",
-    "typescript"
-  ],
-  "author": "Hebert Cisco",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hebertcisco/ts-npm-package-boilerplate/issues"
-  },
-  "homepage": "https://github.com/hebertcisco/ts-npm-package-boilerplate#readme",
   "devDependencies": {
     "@types/jest": "29.4.0",
     "@typescript-eslint/eslint-plugin": "5.54.0",
@@ -41,7 +43,7 @@
     "ts-jest": "29.0.5",
     "typescript": "4.9.5"
   },
-  "files": [
-    "lib/**/*"
+  "keywords": [
+    "typescript"
   ]
 }
